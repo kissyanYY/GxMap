@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:textColor="@android:color/black" />
+    
+        
+     <ImageButton
+        android:id="@+id/start_amap_app_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/snippet"
+        android:background="@drawable/tq_infowindow" />
+     
+     
+      <ImageButton
+        android:id="@+id/travelBtn"
+        android:layout_width="27dip"
+        android:layout_height="27dip"
+        android:paddingLeft="30dip"
+        android:layout_marginLeft="30dip"
+        android:layout_toRightOf="@id/start_amap_app_2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tracel_icon" />
+     
+    <ImageButton
+        android:id="@+id/start_amap_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+         android:paddingLeft="30dip"
+       android:layout_marginLeft="30dip"
+        android:layout_toRightOf="@id/travelBtn"
+        android:background="@drawable/tonavic" />
+    
+</RelativeLayout>

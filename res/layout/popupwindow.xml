@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/popupwindow_bg">
+
+  <ImageView  
+      android:id="@+id/tpp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/tp2"
+      android:scaleType="fitCenter"
+      />
+
+<!--     <ListView -->
+<!--         android:id="@+id/lsvMore" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:divider="@null" -->
+<!--         android:layout_weight="1" /> -->
+
+</LinearLayout>

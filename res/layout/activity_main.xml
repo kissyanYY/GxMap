@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2.0dip" >
+        
+        <AutoCompleteTextView
+            android:id="@+id/keyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_search"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="请输入关键字"
+            android:text="公安局"
+            android:textColorHint="@color/darkgrey"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16.0sp" />            <!-- android:paddingRight="37.0dip" -->  
+
+      <EditText 
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2.0dip"
+            android:hint="请输入城市"
+            android:textColorHint="@color/darkgrey"
+            android:text="南宁"
+            android:visibility="gone"
+            android:background="@drawable/text_search"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16.0sp"/>
+      
+      
+          <TextView
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/offlinearrow_tab2_pressed"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingStart="12dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+          
+<!--          <Button -->
+<!--             android:id="@+id/searchButton" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@drawable/offlinearrow_tab2_pressed" -->
+<!--             android:layout_weight="1" -->
+<!--              android:paddingRight="17.0dip"  -->
+<!--             android:text="搜索" /> -->
+    </LinearLayout>
+
+<!--     <Spinner -->
+<!--         android:id="@+id/spinner_gps" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_weight="1" /> -->
+
+  	<LinearLayout 
+  	    	android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.8">
+	    <fragment
+	        android:id="@+id/map"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        class="com.amap.api.maps.SupportMapFragment" />
+  	</LinearLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_bottom_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/firstline"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/secondline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstline"
+            android:layout_marginLeft="12dp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="13sp" 
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" 
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="详情"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="7dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/arrow_right_blue"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+        
+<!-- 	<com.amap.api.maps.MapView -->
+<!-- 	    android:id="@+id/map" -->
+<!-- 	    android:layout_width="match_parent" -->
+<!-- 	    android:layout_height="match_parent"/>  -->
+</LinearLayout>
